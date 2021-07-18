@@ -105,6 +105,7 @@ api_code = """
 const api = require("./api");
 const router = express.Router();
 router.use("/api", api);
+app.use(router);
 """ if args.api else ""
 
 socketio_code = """
